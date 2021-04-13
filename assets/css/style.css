@@ -1,0 +1,16 @@
+.line-through{
+    text-decoration: line-through;
+    color: grey;
+}
+
+li{
+    list-style: none;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+span{
+    font-weight: bolder;
+}
