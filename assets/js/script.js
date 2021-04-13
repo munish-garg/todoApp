@@ -3,9 +3,9 @@ $('ul').on('click', 'li', function(){
     // alert('Clicked on li...');
 })
 
-$('ul').on('click', 'span', function(event){
+$('ul').on('click', 'i', function(event){
     event.stopPropagation();
-    $(this).parent().fadeOut(2000, function(){
+    $(this).parent().fadeOut(500, function(){
         $(this).remove();
     })
 })
@@ -13,8 +13,10 @@ $('ul').on('click', 'span', function(event){
 $('#task-name').keypress(function(event){
     if(event.originalEvent.keyCode === 13 && $(this).val() !== ''){
         let task = $(this).val();
-        let todo = `<li><span>X</span>${task}</li>`;
+        let todo = `<li><i class="far fa-trash-alt"></i><div>${task}</div></li>`;
+        $(todo).css('background-color', 'red')
         $('#list').append(todo);
+        // $('#list').css('background-color', 'red')
         $(this).val('');
     }
 })
