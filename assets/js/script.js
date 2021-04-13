@@ -22,5 +22,5 @@ $('#task-name').keypress(function(event){
 })
 
 $('#visible').click(function(){
-    $(this).toggleClass('visible')
+    $('#task-name').toggleClass('visible')
 })

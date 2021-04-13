@@ -127,3 +127,7 @@ span{
         width: 100%;
     }
 }
+
+#section #heading i{
+    cursor: pointer;
+}
