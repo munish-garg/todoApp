@@ -66,15 +66,20 @@ span{
     background-color: blue;
 }
 
-#section div h2{
+#section #heading h2{
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    display: inline-block;   
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;   
 }
 
-#section i{
-    /* float: right; */
-    margin-right: 0px;
+#section #heading i{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: large;
+    color: white;
 }
 
 #section #task-name{
@@ -85,9 +90,21 @@ span{
 }
 
 #section #list li{
-    height: 30px;
+    height: 35px;
     /* background-color: yellow; */
     margin: 5px;
+}
+
+#section #list li:nth-child(n){
+    background-color: yellow;
+}
+
+#section #list li:nth-child(2n){
+    background-color: orange;
+}
+
+#section #list li:nth-child(2n+1){
+    background-color: orangered;
 }
 
 #section #list li div{
@@ -103,4 +120,10 @@ span{
 
 .visible{
     display: none;
+}
+
+@media screen and (max-width: 360px){
+    #section{
+        width: 100%;
+    }
 }

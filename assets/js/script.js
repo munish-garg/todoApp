@@ -20,3 +20,7 @@ $('#task-name').keypress(function(event){
         $(this).val('');
     }
 })
+
+$('#visible').click(function(){
+    $(this).toggleClass('visible')
+})
