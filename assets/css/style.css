@@ -12,7 +12,7 @@ body{
 
 .line-through{
     text-decoration: underline;
-    color: grey;
+    background-color: green !important;
 }
 
 li{
