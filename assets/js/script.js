@@ -34,6 +34,7 @@ $('#btn').click(function(){
     if(task !== ''){
         let todo = `<li><i class="far fa-trash-alt"></i><div>${task}</div></li>`
         $('#list').append(todo)
+        $('#task-name').val('');
     }
 })
 
