@@ -24,3 +24,15 @@ $('#task-name').keypress(function(event){
 $('#visible').click(function(){
     $('#task-name').toggleClass('visible')
 })
+
+$('#visible').click(function(){
+    $('#btn').toggleClass('visible');
+})
+
+$('#btn').click(function(){
+    let task = $('#task-name').val();
+    if(task !== ''){
+        let todo = `<li><i class="far fa-trash-alt"></i><div>${task}</div></li>`
+        $('#list').append(todo)
+    }
+})
