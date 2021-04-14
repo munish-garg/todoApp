@@ -39,10 +39,11 @@ $('#btn').click(function(){
 
 $('ul').on('click', '.fa-arrow-circle-up', function(event){
     event.stopPropagation();
-    console.log("Hello World!!!!")
-    $(this).prependTo($('#list'));
+    $(this).parent().insertBefore($(this).parent().prev());
 })
 
-$('ul').on('click', 'down', function(){
-
+$('ul').on('click', '.fa-arrow-circle-down', function(event){
+    event.stopPropagation();
+    console.log("Hello World!!!")
+    $(this).parent().next().insertBefore($(this).parent());
 })
