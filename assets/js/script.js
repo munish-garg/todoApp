@@ -37,8 +37,10 @@ $('#btn').click(function(){
     }
 })
 
-$('ul').on('click', '#up', function(){
-
+$('ul').on('click', '.fa-arrow-circle-up', function(event){
+    event.stopPropagation();
+    console.log("Hello World!!!!")
+    $(this).prependTo($('#list'));
 })
 
 $('ul').on('click', 'down', function(){

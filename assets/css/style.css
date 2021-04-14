@@ -104,20 +104,9 @@ span{
 
 #section #list li{
     height: 35px;
-    /* background-color: yellow; */
-    margin: 5px;
-}
-
-#section #list li:nth-child(n){
-    background-color: yellow;
-}
-
-#section #list li:nth-child(2n){
-    background-color: orange;
-}
-
-#section #list li:nth-child(2n+1){
     background-color: orangered;
+    margin: 5px;
+    border-radius: 2px;
 }
 
 #section #list li div{
@@ -130,6 +119,8 @@ span{
 #section #list li i{
     margin-left: 4px;
     font-size: large;
+    color: white;
+    margin-top: 5px;
 }
 
 .visible{
