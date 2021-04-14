@@ -128,7 +128,8 @@ span{
 }
 
 #section #list li i{
-    margin-left: 2px;
+    margin-left: 4px;
+    font-size: large;
 }
 
 .visible{
