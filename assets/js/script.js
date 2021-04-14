@@ -32,7 +32,7 @@ $('#visible').click(function(){
 $('#btn').click(function(){
     let task = $('#task-name').val();
     if(task !== ''){
-        let todo = `<li><i class="far fa-trash-alt"></i><div>${task}</div></li>`
+        let todo = `<li><i class="far fa-trash-alt"></i><i class="fas fa-arrow-circle-up"></i><i class="fas fa-arrow-circle-down"></i><div>${task}</div></li>`
         $('#list').append(todo)
         $('#task-name').val('');
     }
